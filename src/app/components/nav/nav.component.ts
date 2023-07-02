@@ -11,7 +11,7 @@ export class NavComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    this.router.navigate(['home'])//Quando projeto for iniciado, irá navegar para a rota home
+    this.router.navigate(['tecnicos'])//Quando projeto for iniciado, irá navegar para a rota home
   }
 
 }
