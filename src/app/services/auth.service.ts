@@ -13,8 +13,8 @@ export class AuthService {
 
   constructor(private http: HttpClient) { } //Toda vez que o service for construido irá ser criada uma instância de HttpClient
 
-  authenticate(creds: Credenciais) { //Metodo irá recuperar as informações digitadas pelo usuánio nos campos email e senha
-    return this.http.post(`${API_CONFIG.baseURL}/login`, creds, {
+  authenticate(creds: Credenciais) { //Metodo irá receber as informações digitadas pelo usuário nos campos email e senha
+    return this.http.post(`${API_CONFIG.baseURL}/login`, creds, {//Irá ser feito uma requisição do tipo post nesta url com as credenciais informadas pelo usuário
       observe: 'response',
       responseType: 'text'
     })
@@ -30,5 +30,9 @@ export class AuthService {
       return !this.jwtService.isTokenExpired(token);
     }
     return false;
+  }
+
+  Logout() { //Quando o método for executado
+    localStorage.clear(); //Será limpo o token de acesso
   }
 }
