@@ -14,10 +14,10 @@ export class TecnicoService {
   } 
 
   findAll(): Observable<Tecnico[]> { //Método responsável por fazer a requisição e retornar os técnicos, e irá retornar um observable de uma lista de tecnicos
-    return this.http.get<Tecnico[]>(`${API_CONFIG.baseURL}/tecnicos`);
+    return this.http.get<Tecnico[]>(`${API_CONFIG.baseURL}/tecnicos`);//requisição do tipo get na rota tecnicos
   }
 
   create(tecnico: Tecnico): Observable<Tecnico> { //Método responsável por criar um tecnico, irá receber um tecnico como parâmetro e irá retornar um observable de técnico para que seja feita a requisição e seja observada a resposta
-    return this.http.post<Tecnico>(`${API_CONFIG.baseURL}/tecnicos`, tecnico);
+    return this.http.post<Tecnico>(`${API_CONFIG.baseURL}/tecnicos`, tecnico);//requisição do tipo post na rota tecnicos
   }
 }

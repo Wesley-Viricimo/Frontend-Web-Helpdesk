@@ -12,7 +12,7 @@ import { TecnicoService } from 'src/app/services/tecnico.service';
 })
 export class TecnicoCreateComponent implements OnInit {
 
-  tecnico: Tecnico ={
+  tecnico: Tecnico = { //Inicializando objeto técnico
     id: '',
     nome: '',
     cpf: '',
@@ -28,23 +28,23 @@ export class TecnicoCreateComponent implements OnInit {
   senha: FormControl = new FormControl(null, Validators.minLength(3));
 
   constructor(
-    private service: TecnicoService,
-    private toast: ToastrService,
-    private router: Router) { }
+    private service: TecnicoService,//Instância de tecnico service para realizar a requisição
+    private toast: ToastrService, //Instância do toast
+    private router: Router) { } //Instância do router
 
   ngOnInit(): void { }
 
   create(): void {
-    this.service.create(this.tecnico).subscribe(() => {
-      this.toast.success('Tecnico cadastrado com sucesso', 'Cadastro');
-      this.router.navigate(['tecnicos']);
-    }, exception => {
-      if(exception.error.errors) {
-        exception.error.errors.forEach(element => {
-          this.toast.error(element.message);
+    this.service.create(this.tecnico).subscribe(() => { //Irá ser feita a chamada do método create da classe tecnicoService
+      this.toast.success('Tecnico cadastrado com sucesso', 'Cadastro');//Se for realizada a criação do técnico com sucesso irá ser exibida a mensagem
+      this.router.navigate(['tecnicos']); //E redirecionar para a rota tecnicos
+    }, exception => { //Se der algum erro
+      if(exception.error.errors) {//Se o erro for um array com vários erros
+        exception.error.errors.forEach(element => { //Percorrer o array
+          this.toast.error(element.message);//E exibir um toast para cada um deles
         });
-      } else {
-        this.toast.error(exception.error.message);
+      } else { //Se for apenas um erro
+        this.toast.error(exception.error.message);//Exibir um toast com o erro
       }
     })
   }
