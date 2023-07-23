@@ -12,7 +12,7 @@ import { ClienteService } from 'src/app/services/cliente.service';
 })
 export class ClienteCreateComponent implements OnInit {
 
-  cliente: Cliente = { //Inicializando objeto técnico
+  cliente: Cliente = { //Inicializando objeto cliente
     id: '',
     nome: '',
     cpf: '',
@@ -36,7 +36,7 @@ export class ClienteCreateComponent implements OnInit {
 
   create(): void {
     this.service.create(this.cliente).subscribe(() => { //Irá ser feita a chamada do método create da classe clienteService
-      this.toast.success('Cliente cadastrado com sucesso', 'Cadastro');//Se for realizada a criação do técnico com sucesso irá ser exibida a mensagem
+      this.toast.success('Cliente cadastrado com sucesso', 'Cadastro');//Se for realizada a criação do cliente com sucesso irá ser exibida a mensagem
       this.router.navigate(['clientes']); //E redirecionar para a rota clientes
     }, exception => { //Se der algum erro
       if(exception.error.errors) {//Se o erro for um array com vários erros

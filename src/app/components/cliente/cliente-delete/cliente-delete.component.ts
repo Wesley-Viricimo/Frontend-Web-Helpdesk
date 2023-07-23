@@ -12,7 +12,7 @@ import { ClienteService } from 'src/app/services/cliente.service';
 })
 export class ClienteDeleteComponent implements OnInit {
   
-  cliente: Cliente = { //Inicializando objeto técnico
+  cliente: Cliente = { //Inicializando objeto cliente
     id: '',
     nome: '',
     cpf: '',
@@ -42,7 +42,7 @@ export class ClienteDeleteComponent implements OnInit {
 
   delete(): void {
     this.service.delete(this.cliente.id).subscribe(() => { //Irá ser feita a chamada do método update da classe clienteService
-      this.toast.success('Cliente excluído com sucesso', 'Exclusão');//Se for realizada a atualização do técnico com sucesso irá ser exibida a mensagem
+      this.toast.success('Cliente excluído com sucesso', 'Exclusão');//Se for realizada a atualização do cliente com sucesso irá ser exibida a mensagem
       this.router.navigate(['clientes']); //E redirecionar para a rota clientes
     }, exception => { //Se der algum erro
       if(exception.error.errors) {//Se o erro for um array com vários erros

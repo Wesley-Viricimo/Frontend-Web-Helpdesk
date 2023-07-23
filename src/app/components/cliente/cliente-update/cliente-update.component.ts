@@ -12,7 +12,7 @@ import { ClienteService } from 'src/app/services/cliente.service';
 })
 export class ClienteUpdateComponent implements OnInit {
 
-  cliente: Cliente = { //Inicializando objeto técnico
+  cliente: Cliente = { //Inicializando objeto cliente
     id: '',
     nome: '',
     cpf: '',
@@ -47,7 +47,7 @@ export class ClienteUpdateComponent implements OnInit {
 
   update(): void {
     this.service.update(this.cliente).subscribe(() => { //Irá ser feita a chamada do método update da classe clienteService
-      this.toast.success('Cliente atualizado com sucesso', 'Atualização');//Se for realizada a atualização do técnico com sucesso irá ser exibida a mensagem
+      this.toast.success('Cliente atualizado com sucesso', 'Atualização');//Se for realizada a atualização do cliente com sucesso irá ser exibida a mensagem
       this.router.navigate(['clientes']); //E redirecionar para a rota clientes
     }, exception => { //Se der algum erro
       if(exception.error.errors) {//Se o erro for um array com vários erros
