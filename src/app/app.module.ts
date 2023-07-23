@@ -60,6 +60,7 @@ import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-
     ClienteCreateComponent,
     ClienteUpdateComponent,
     ClienteDeleteComponent,
+    ChamadoListComponent,
     ChamadoListComponent
   ],
   imports: [
