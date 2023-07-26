@@ -20,7 +20,7 @@ export class ChamadoCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  validaCampos(): boolean {
+  validaCampos(): boolean { 
     return this.prioridade.valid && this.status.valid &&
            this.titulo.valid && this.descricao.valid &&
            this.tecnico.valid && this.cliente.valid
