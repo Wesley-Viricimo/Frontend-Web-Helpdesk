@@ -17,7 +17,7 @@ export class NavComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    this.router.navigate(['chamados/update/1'])//Quando projeto for iniciado, irá navegar para a rota home
+    this.router.navigate(['chamados/read/1'])//Quando projeto for iniciado, irá navegar para a rota home
   }
 
   Logout() { //Quando usuário selecionar a opção Logout no menu
