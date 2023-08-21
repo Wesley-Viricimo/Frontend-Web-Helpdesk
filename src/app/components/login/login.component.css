@@ -13,7 +13,7 @@ body * {
 .container {
     width: 100vw;
     height: 100vh;
-    background: #201b2c;
+    background: #131313;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +52,7 @@ body * {
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #2f2841;
+    background: #1d1d1d;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
 }
@@ -77,7 +77,7 @@ body * {
     border: none;
     border-radius: 18px;
     padding: 15px;
-    background: #514869;
+    background: rgb(61, 61, 61);
     color: #f0ffffde;
     font-size: 12pt;
     box-shadow: 0px 10px 40px #00000056;
@@ -104,7 +104,7 @@ body * {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #2b134b;
+    color: #131313;
     background: #00ff88;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052;
