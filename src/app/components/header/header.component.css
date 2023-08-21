@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto sans', sans-serif;
+}
+
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #131313;
 }
 
 h1 {
     margin-top: 1rem;
-    border: 1px solid rgb(161, 159, 159);
     padding: 1rem 10px;
-    border-radius: 2rem;
+    color: #f0ffffde;
 }
