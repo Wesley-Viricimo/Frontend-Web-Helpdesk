@@ -1,12 +1,12 @@
 <div class="container">
 
-<h1>Listando Clientes</h1>
+<h1 class="title">Listando Clientes</h1>
 
-  <button routerLink="create" class="mat-elevation-z8" mat-stroked-button color="primary">Novo cliente</button>
+  <button routerLink="create" class="btn-cadastro mat-elevation-z8" mat-stroked-button color="primary">Novo cliente</button>
  
   <mat-form-field>
     <mat-label>Buscar cliente</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Nome, CPF..." #input>
+    <input matInput (keyup)="applyFilter($event)" #input>
   </mat-form-field>
 
     <div class="mat-elevation-z8">
