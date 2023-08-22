@@ -3,10 +3,6 @@
     margin: 1rem auto;
 }
 
-table {
-    width: 100%;
-  }
-
 ::ng-deep .mat-form-field {
     .mat-form-field-label {
         color: #f0ffffde;
@@ -96,6 +92,7 @@ h1 {
 
 ::ng-deep .mat-table {
     background: #1d1d1d;
+    width: 100%;
 }
 
 th {
@@ -114,7 +111,7 @@ td {
 
 ::ng-deep .mat-paginator-range-actions {
     background-color: #2600ff;
-    border-radius: 8px;
+    border-radius: 12px;
     color: white;
 }
 
@@ -127,5 +124,9 @@ td {
 }
 
 ::ng-deep .mat-select-arrow {
+    color: white;
+}
+
+::ng-deep .mat-paginator-icon {
     color: white;
 }
