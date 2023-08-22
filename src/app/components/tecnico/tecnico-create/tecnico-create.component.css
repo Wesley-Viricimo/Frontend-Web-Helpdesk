@@ -9,14 +9,11 @@
 
 .title{
     color: #f0ffffde;
+    text-align: center;
 }
 
 .fullWidth {
     width: 100%;
-}
-
-h1 {
-    text-align: center;
 }
 
 .section {
