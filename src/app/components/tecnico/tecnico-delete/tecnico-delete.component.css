@@ -41,7 +41,7 @@ mat-icon {
 
 mat-icon {
     opacity: .8;
-    color: #f0ffffde;
+    color: rgb(175, 175, 175);
 }
 
 ::ng-deep .mat-form-field {
@@ -59,25 +59,6 @@ mat-icon {
 
    .mat-form-field-required-marker {
        color: #f0ffffde;
-   }
-}
-
-::ng-deep .mat-form-field.mat-focused {
-
-   .mat-form-field-label {
-       color: #f0ffffde;
-   }
-
-   .mat-form-field-ripple {
-       background-color: #f0ffffde;
-   }
-
-   .mat-form-field-required-marker {
-       color: #f0ffffde;
-   }
-
-   .mat-input-element {
-       color: white;
    }
 }
 
@@ -136,5 +117,22 @@ p {
 }
 
 ::ng-deep .mat-checkbox-label {
+    color: rgb(175, 175, 175) !important;
+}
+
+::ng-deep .mat-input-element .mat-form-field-autofill-control {
     color: white;
 }
+
+::ng-deep .mat-form-field-disabled {
+    .mat-input-element {
+         color: rgb(175, 175, 175);
+     }
+}
+
+::ng-deep .mat-form-field-label  {
+    .ng-star-inserted{
+        color: rgb(175, 175, 175);
+    }
+}
+
