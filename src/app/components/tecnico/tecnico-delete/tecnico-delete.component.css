@@ -13,9 +13,6 @@
 
 .title{
     color: #f0ffffde;
-}
-
-h1 {
     text-align: center;
 }
 
@@ -27,16 +24,6 @@ h1 {
 
 button {
     margin-top: .5rem;
-}
-
-p {
-    text-align: end;
-    margin-top: 1rem;
-    opacity: .5;
-}
-
-mat-icon {
-     opacity: .8;
 }
 
 mat-icon {
@@ -95,7 +82,7 @@ mat-icon {
    outline: none;
    text-transform: uppercase;
    color: white;
-   background: rgb(4, 46, 126);
+   background: rgb(27, 112, 240);
    cursor: pointer;
 }
 
