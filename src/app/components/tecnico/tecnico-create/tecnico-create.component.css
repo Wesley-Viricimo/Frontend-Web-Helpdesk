@@ -29,14 +29,9 @@ button {
     margin-top: .5rem;
 }
 
-p {
-    text-align: end;
-    margin-top: 1rem;
-    opacity: .5;
-}
-
 mat-icon {
      opacity: .8;
+     color: #f0ffffde;
 }
 
 ::ng-deep .mat-form-field {
@@ -125,11 +120,7 @@ mat-icon {
 
 p {
     color: #f0ffffde;
+    text-align: end;
+    margin-top: 1rem;
+    opacity: .5;
 }
-
-mat-icon{
-    color: #f0ffffde;
-}
-
-
-
