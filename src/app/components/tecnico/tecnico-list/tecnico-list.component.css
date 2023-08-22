@@ -3,59 +3,64 @@
     margin: 1rem auto;
 }
 
+mat-icon {
+    opacity: .8;
+    color: #f0ffffde;
+}
+
 ::ng-deep .mat-form-field {
     .mat-form-field-label {
         color: #f0ffffde;
     }
-
+ 
     .mat-form-field-underline {
         background-color: #f0ffffde;
     }
-
+ 
     .mat-form-field-ripple {
         background-color: #f0ffffde;
     }
-
+ 
     .mat-form-field-required-marker {
         color: #f0ffffde;
     }
-}
-
-::ng-deep .mat-form-field.mat-focused {
-
+ }
+ 
+ ::ng-deep .mat-form-field.mat-focused {
+ 
     .mat-form-field-label {
         color: #f0ffffde;
     }
-
+ 
     .mat-form-field-ripple {
         background-color: #f0ffffde;
     }
-
+ 
     .mat-form-field-required-marker {
         color: #f0ffffde;
     }
-
+ 
     .mat-input-element {
         color: white;
     }
-}
-
-::ng-deep .mat-form-field.mat-form-field-invalid {
-    .mat-form-field-label {
-        color: #f0ffffde;
-        .mat-form-field-required-marker {
-            color: #f0ffffde;
-        }
-    }
-
-    .mat-form-field-ripple {
-        background-color: #f0ffffde;
-    }
-
+ }
+ 
+ ::ng-deep .mat-form-field.mat-form-field-invalid {
     .mat-input-element {
         color: white;
     }
-}
+ }
+ 
+ ::ng-deep .mat-form-field-outline {
+     width: 100%;
+     border: none;
+     border-radius: 8px;
+     background: rgb(61, 61, 61);
+     color: #f0ffffde;
+     font-size: 12pt;
+     box-shadow: 0px 10px 40px #00000056;
+     box-sizing: border-box;
+  }
 
 mat-form-field {
     width: 100%;
@@ -68,7 +73,7 @@ mat-form-field {
     border-radius: 8px;
     outline: none;
     letter-spacing: 2px;
-    background: #2600ff;
+    background: rgb(27, 112, 240);
     color: #f0ffffde;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00000052;
@@ -82,7 +87,7 @@ h1 {
 }
 
 .edit {
-    color: #2600ff;
+    color: rgb(27, 112, 240);
 }
 
 .delete {
@@ -110,7 +115,7 @@ td {
 }
 
 ::ng-deep .mat-paginator-range-actions {
-    background-color: #2600ff;
+    background-color: rgb(27, 112, 240);
     border-radius: 12px;
     color: white;
 }
