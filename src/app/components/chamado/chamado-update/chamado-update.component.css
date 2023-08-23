@@ -3,6 +3,12 @@
     margin: auto auto 3rem auto;
     padding: 1rem;
     border-radius: 1rem;
+    background-color: #1d1d1d;
+}
+
+.title {
+    color: #f0ffffde;
+    text-align: center;
 }
 
 .full-width {
@@ -27,12 +33,105 @@ h1 {
     max-height: 7rem;
 }
 
-button {
+.btn-create{
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    color: white;
+    background: rgb(27, 112, 240);
+    cursor: pointer;
     margin-top: .5rem;
-}
-
-p {
-    text-align: right;
+ }
+ 
+ .btn-cancel{
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    color: white;
+    background: rgb(172, 0, 0);
+    cursor: pointer;
+    margin-top: .5rem;
+ }
+ 
+ p {
+    color: #f0ffffde;
+    text-align: end;
     margin-top: 1rem;
     opacity: .5;
-}
+ }
+
+::ng-deep .mat-form-field {
+    .mat-form-field-label {
+        color: #f0ffffde;
+    }
+ 
+    .mat-form-field-underline {
+        background-color: #f0ffffde;
+    }
+ 
+    .mat-form-field-ripple {
+        background-color: #f0ffffde;
+    }
+ 
+    .mat-form-field-required-marker {
+        color: #f0ffffde;
+    }
+ }
+ 
+ ::ng-deep .mat-form-field.mat-focused {
+ 
+    .mat-form-field-label {
+        color: #f0ffffde;
+    }
+ 
+    .mat-form-field-ripple {
+        background-color: #f0ffffde;
+    }
+ 
+    .mat-form-field-required-marker {
+        color: #f0ffffde;
+    }
+ 
+    .mat-input-element {
+        color: white;
+    }
+ }
+ 
+ ::ng-deep .mat-form-field.mat-form-field-invalid {
+    .mat-input-element {
+        color: white;
+    }
+ }
+ 
+ ::ng-deep .mat-checkbox {
+    color: white;
+ }
+ 
+ ::ng-deep .mat-checkbox-background {
+    background: white;
+ }
+ 
+ ::ng-deep .mat-form-field-outline {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: rgb(61, 61, 61);
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    box-sizing: border-box;
+ }
+
+ ::ng-deep .mat-select-arrow{
+    color: white;
+ }
+
+ ::ng-deep .mat-select-value{
+    color: white;
+ } 
+
+ ::ng-deep .mat-input-element .mat-form-field-autofill-control {
+    color: white;
+ }
