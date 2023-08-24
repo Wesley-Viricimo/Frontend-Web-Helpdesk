@@ -22,39 +22,13 @@
     justify-content: space-between;
 }
 
-.btn-create{
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
+::ng-deep .mat-checkbox {
     color: white;
-    background: rgb(27, 112, 240);
-    cursor: pointer;
-    margin-top: .5rem;
  }
  
- .btn-cancel{
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
-    color: white;
-    background: rgb(172, 0, 0);
-    cursor: pointer;
-    margin-top: .5rem;
+ ::ng-deep .mat-checkbox-background {
+    background: white;
  }
-
-mat-icon {
-    opacity: .8;
-    color: #f0ffffde;
-}
-
-p {
-   color: #f0ffffde;
-   text-align: end;
-   margin-top: 1rem;
-   opacity: .5;
-}
 
 ::ng-deep .mat-form-field {
    .mat-form-field-label {
@@ -99,14 +73,6 @@ p {
    }
 }
 
-::ng-deep .mat-checkbox {
-   color: white;
-}
-
-::ng-deep .mat-checkbox-background {
-   background: white;
-}
-
 ::ng-deep .mat-form-field-outline {
    width: 100%;
    border: none;
@@ -117,3 +83,37 @@ p {
    box-shadow: 0px 10px 40px #00000056;
    box-sizing: border-box;
 }
+
+mat-icon {
+    opacity: .8;
+    color: #f0ffffde;
+}
+
+.btn-create {
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    color: white;
+    background: rgb(27, 112, 240);
+    cursor: pointer;
+    margin-top: .5rem;
+ }
+ 
+ .btn-cancel {
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    color: white;
+    background: rgb(172, 0, 0);
+    cursor: pointer;
+    margin-top: .5rem;
+ }
+
+ p {
+    color: #f0ffffde;
+    text-align: end;
+    margin-top: 1rem;
+    opacity: .5;
+ }
