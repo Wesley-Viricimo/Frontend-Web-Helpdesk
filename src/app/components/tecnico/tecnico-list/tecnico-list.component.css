@@ -3,9 +3,24 @@
     margin: 1rem auto;
 }
 
-mat-icon {
-    opacity: .8;
+.title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
     color: #f0ffffde;
+}
+
+.btn-cadastro {
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    letter-spacing: 2px;
+    background: rgb(27, 112, 240);
+    color: #f0ffffde;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00000052;
 }
 
 ::ng-deep .mat-form-field {
@@ -41,13 +56,13 @@ mat-icon {
     }
  
     .mat-input-element {
-        color: white;
+        color: #f0ffffde;
     }
  }
  
  ::ng-deep .mat-form-field.mat-form-field-invalid {
     .mat-input-element {
-        color: white;
+        color: #f0ffffde;
     }
  }
  
@@ -60,30 +75,32 @@ mat-icon {
      font-size: 12pt;
      box-shadow: 0px 10px 40px #00000056;
      box-sizing: border-box;
-  }
+}
+
+::ng-deep .mat-form-field-flex {
+    color: black;
+}
 
 mat-form-field {
     width: 100%;
 }
 
-.btn-cadastro {
-    width: 100%;
-    margin-bottom: 1rem;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    letter-spacing: 2px;
-    background: rgb(27, 112, 240);
+mat-icon {
+    opacity: .8;
     color: #f0ffffde;
-    cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00000052;
 }
 
-h1 {
+::ng-deep .mat-table {
+    background: #1d1d1d;
     width: 100%;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #f0ffffde;
+}
+
+th {
+    color: white
+}
+
+td {
+    color: white;
 }
 
 .edit {
@@ -94,44 +111,21 @@ h1 {
     color: red;
 }
 
-
-::ng-deep .mat-table {
-    background: #1d1d1d;
-    width: 100%;
-}
-
-th {
-    color: white;
-}
-
-td {
-    color: white;
-}
-
-
 ::ng-deep .mat-paginator-outer-container {
     background-color: #1d1d1d;
-    color: white;
+    color: #f0ffffde;
 }
 
 ::ng-deep .mat-paginator-range-actions {
     background-color: rgb(27, 112, 240);
     border-radius: 12px;
-    color: white;
-}
-
-::ng-deep .mat-form-field-flex {
-    color: white;
+    color: #f0ffffde;
 }
 
 ::ng-deep .mat-select-value-text {
-    color: white;
+    color: #f0ffffde;
 }
 
 ::ng-deep .mat-select-arrow {
-    color: white;
-}
-
-::ng-deep .mat-paginator-icon {
-    color: white;
+    color: #f0ffffde;
 }

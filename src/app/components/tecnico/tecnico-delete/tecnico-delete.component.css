@@ -7,13 +7,13 @@
     background-color: #1d1d1d;
 }
 
-.fullWidth {
-    width: 100%;
-}
-
-.title{
+.title {
     color: #f0ffffde;
     text-align: center;
+}
+
+.fullWidth {
+    width: 100%;
 }
 
 .section {
@@ -22,13 +22,16 @@
     justify-content: space-between;
 }
 
-button {
-    margin-top: .5rem;
+::ng-deep .mat-checkbox {
+    color: white;
+ }
+ 
+ ::ng-deep .mat-checkbox-background {
+    background: white;
 }
 
-mat-icon {
-    opacity: .8;
-    color: rgb(175, 175, 175);
+::ng-deep .mat-checkbox-label {
+    color: #f0ffffde !important;
 }
 
 ::ng-deep .mat-form-field {
@@ -55,14 +58,6 @@ mat-icon {
    }
 }
 
-::ng-deep .mat-checkbox {
-   color: white;
-}
-
-::ng-deep .mat-checkbox-background {
-   background: white;
-}
-
 ::ng-deep .mat-form-field-outline {
    width: 100%;
    border: none;
@@ -72,39 +67,6 @@ mat-icon {
    font-size: 12pt;
    box-shadow: 0px 10px 40px #00000056;
    box-sizing: border-box;
-}
-
-
-
-.btn-delete{
-   border: none;
-   border-radius: 8px;
-   outline: none;
-   text-transform: uppercase;
-   color: white;
-   background: rgb(27, 112, 240);
-   cursor: pointer;
-}
-
-.btn-cancel{
-   border: none;
-   border-radius: 8px;
-   outline: none;
-   text-transform: uppercase;
-   color: white;
-   background: rgb(172, 0, 0);
-   cursor: pointer;
-}
-
-p {
-   color: #f0ffffde;
-   text-align: end;
-   margin-top: 1rem;
-   opacity: .5;
-}
-
-::ng-deep .mat-checkbox-label {
-    color: rgb(175, 175, 175) !important;
 }
 
 ::ng-deep .mat-input-element .mat-form-field-autofill-control {
@@ -121,5 +83,39 @@ p {
     .ng-star-inserted{
         color: rgb(175, 175, 175);
     }
+}
+
+mat-icon {
+    opacity: .8;
+    color: rgb(175, 175, 175);
+}
+
+.btn-delete {
+   border: none;
+   border-radius: 8px;
+   outline: none;
+   text-transform: uppercase;
+   color: white;
+   background: rgb(27, 112, 240);
+   cursor: pointer;
+   margin-top: .5rem;
+}
+
+.btn-cancel {
+   border: none;
+   border-radius: 8px;
+   outline: none;
+   text-transform: uppercase;
+   color: white;
+   background: rgb(172, 0, 0);
+   cursor: pointer;
+   margin-top: .5rem;
+}
+
+p {
+   color: #f0ffffde;
+   text-align: end;
+   margin-top: 1rem;
+   opacity: .5;
 }
 

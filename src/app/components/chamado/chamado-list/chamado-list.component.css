@@ -155,10 +155,6 @@ mat-form-field {
     color: white;
 }
 
-::ng-deep .mat-paginator-icon {
-    color: white;
-}
-
 :host ::ng-deep .mat-radio-outer-circle {
     border-color: white;
 }

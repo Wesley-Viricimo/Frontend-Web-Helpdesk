@@ -120,10 +120,6 @@ td {
     color: white;
 }
 
-::ng-deep .mat-paginator-icon {
-    color: gray;
-}
-
 mat-form-field {
     width: 100%;
 }
