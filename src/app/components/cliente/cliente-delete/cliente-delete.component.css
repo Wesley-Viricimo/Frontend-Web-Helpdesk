@@ -69,11 +69,6 @@
     box-sizing: border-box;
 }
 
-mat-icon {
-    opacity: .8;
-    color: rgb(175, 175, 175);
-}
-
 ::ng-deep .mat-input-element .mat-form-field-autofill-control {
     color: white;
 }
@@ -88,6 +83,11 @@ mat-icon {
     .ng-star-inserted {
         color: rgb(175, 175, 175);
     }
+}
+
+mat-icon {
+    opacity: .8;
+    color: rgb(175, 175, 175);
 }
 
 .btn-delete {
