@@ -64,8 +64,8 @@ p {
 }
 
 
-::ng-deep .mat-form-field-label  {
+:host ::ng-deep .mat-form-field-label  {
     .ng-star-inserted {
-        /*color: rgb(175, 175, 175);*/
+        color: rgb(175, 175, 175);
     }
 }
