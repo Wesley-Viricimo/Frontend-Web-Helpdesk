@@ -48,7 +48,11 @@
    }
 }
 
-::ng-deep .mat-form-field.mat-focused {
+::ng-deep .mat-focused {
+    color: white;
+}
+
+::ng-deep .mat-form-field {
 
    .mat-form-field-label {
        color: #f0ffffde;
