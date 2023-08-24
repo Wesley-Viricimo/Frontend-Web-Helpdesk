@@ -7,13 +7,13 @@
     background-color: #1d1d1d;
 }
 
-.fullWidth {
-    width: 100%;
-}
-
-.title{
+.title {
     color: #f0ffffde;
     text-align: center;
+}
+
+.fullWidth {
+    width: 100%;
 }
 
 .section {
@@ -22,14 +22,13 @@
     justify-content: space-between;
 }
 
-button {
-    margin-top: .5rem;
-}
-
-mat-icon {
-    opacity: .8;
-    color: #f0ffffde;
-}
+::ng-deep .mat-checkbox {
+    color: white;
+ }
+ 
+ ::ng-deep .mat-checkbox-background {
+    background: white;
+ }
 
 ::ng-deep .mat-form-field {
    .mat-form-field-label {
@@ -49,7 +48,11 @@ mat-icon {
    }
 }
 
-::ng-deep .mat-form-field.mat-focused {
+::ng-deep .mat-focused {
+    color: white;
+}
+
+::ng-deep .mat-form-field {
 
    .mat-form-field-label {
        color: #f0ffffde;
@@ -64,22 +67,14 @@ mat-icon {
    }
 
    .mat-input-element {
-       color: white;
+       color: #f0ffffde;
    }
 }
 
 ::ng-deep .mat-form-field.mat-form-field-invalid {
    .mat-input-element {
-       color: white;
+       color: #f0ffffde;
    }
-}
-
-::ng-deep .mat-checkbox {
-   color: white;
-}
-
-::ng-deep .mat-checkbox-background {
-   background: white;
 }
 
 ::ng-deep .mat-form-field-outline {
@@ -93,9 +88,12 @@ mat-icon {
    box-sizing: border-box;
 }
 
+mat-icon {
+    opacity: .8;
+    color: #f0ffffde;
+}
 
-
-.btn-update{
+.btn-update {
    border: none;
    border-radius: 8px;
    outline: none;
@@ -103,9 +101,10 @@ mat-icon {
    color: white;
    background: rgb(27, 112, 240);
    cursor: pointer;
+   margin-top: .5rem;
 }
 
-.btn-cancel{
+.btn-cancel {
    border: none;
    border-radius: 8px;
    outline: none;
@@ -113,6 +112,7 @@ mat-icon {
    color: white;
    background: rgb(172, 0, 0);
    cursor: pointer;
+   margin-top: .5rem;
 }
 
 p {
