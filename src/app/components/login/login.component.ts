@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
     this.service.authenticate(this.creds).subscribe(resposta => { //Chamada do método authenticate da classe AuthService que irá recuperar o usuário e senha informados pelo usuário e irá retornar se a resposta contém ou não informação
       this.service.successfullLogin(resposta.headers.get('Authorization').substring(7)); //Se a resposta contiver um conteúdo, será enviado o header da resposta para o método successfullLogin da classe AuthService
       this.router.navigate(['']);//Se a resposta contiver um conteúdo, após autenticar o usuário será redirecionado para a rota ''
+      this.toast.info('Login realizado com sucesso!', 'Login', {timeOut: 2000})
     }, () => {
       this.toast.error('Usuário e/ou senha inválidos!') //Se a resposta retornar vazia será exibido o toast
     } )

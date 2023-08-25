@@ -5,18 +5,18 @@
         <section class="section">
             <mat-checkbox [disabled]="true" class="margin" color="primary">Admin</mat-checkbox>
             <mat-checkbox [disabled]="true" class="margin" color="primary">Cliente</mat-checkbox>
-            <mat-checkbox [disabled]="true" class="margin" color="primary">Cliente</mat-checkbox>
+            <mat-checkbox [disabled]="true" class="margin" color="primary">Tecnico</mat-checkbox>
           </section>
           
           <mat-form-field class="fullWidth" appearance="outline">
             <mat-label>Nome</mat-label>
             <input [(ngModel)]="cliente.nome" name="nome" [disabled]="true" matInput>
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-icon matSuffix>account_box</mat-icon>
           </mat-form-field>
 
           <mat-form-field class="fullWidth" appearance="outline">
             <mat-label>CPF</mat-label>
-            <input [(ngModel)]="cliente.cpf" name="cpf" [disabled]="true" matInput>
+            <input [(ngModel)]="cliente.cpf" name="cpf" [disabled]="true" matInput mask="000.000.000-00">
             <mat-icon matSuffix>pin</mat-icon>
           </mat-form-field>
 
