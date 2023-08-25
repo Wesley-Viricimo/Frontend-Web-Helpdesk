@@ -52,8 +52,12 @@
     }
 }
 
-::ng-deep .mat-form-field.mat-form-field-invalid {
+::ng-deep .mat-form-field{
     .mat-input-element {
+        color: white;
+    }
+
+    .mat-form-field-invalid {
         color: white;
     }
 }
